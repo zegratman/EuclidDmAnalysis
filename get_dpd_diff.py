@@ -3,11 +3,6 @@ import requests
 if __name__ == '__main__':
 
     resp = requests.get(
-        'https://gitlab.euclid-sgs.uk/api/v4/projects/1480/repository/compare?from=temp-8.0.4&to=8.0.3&straight=true',
-        headers={
-            'Content-Type': 'application/json',
-            'PRIVATE-TOKEN': 'Cdxv9yaCiBqavr9gv9Gr'
-        }
     )
 
     response = resp.json()
